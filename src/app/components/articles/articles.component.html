@@ -1,0 +1,26 @@
+<section>
+    <div class="about">
+        <span></span>
+        <p class="text-opacity">Blog</p>
+    </div>
+    <h1>Browse articles</h1>
+    <div class="articles">
+        @for (article of articles; track article.id) {
+        <div class="article">
+            <img class="article-image" [src]="article.imageSrc" alt="">
+            <div class="status">
+                <img class="user" src="/assets/User.svg" alt="">
+                <p>{{ article.author }}</p>
+                <img class="calendar" src="/assets/Calendar.svg" alt="">
+                <p>{{ article.date }}</p>
+            </div>
+            <p class="title">{{ article.title }}</p>
+            <div class="more">
+                <p class="text-opacity">Read more</p>
+                <img src="/assets/ArrowRightDark.svg" alt="">
+            </div>
+        </div>
+        }
+    </div>
+    <button>View all <img src="/assets/ArrowRight.svg" alt=""></button>
+</section>

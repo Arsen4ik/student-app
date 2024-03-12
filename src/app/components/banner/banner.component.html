@@ -1,0 +1,26 @@
+<section>
+    <img class="banner-image" src="/assets/BannerImage.png" alt="">
+    <div class="main-part">
+        <div class="about">
+            <span></span>
+            <p class="text-opacity">About us</p>
+        </div>
+        <h1>E-Learning Platform for Digital Skills</h1>
+        <p class="text-opacity description">Empower yourself with the knowledge and skills gained through online
+            education!
+            The key to your future! Empower yourself with the knowledge and skills gained through
+            online education! The key to your future!</p>
+        <button>Learn more <img src="/assets/ArrowRight.svg" alt=""></button>
+    </div>
+    <div class="advantages">
+        @for (advantage of advantages; track $index) {
+        <div>
+            <p class="title">
+                {{ advantage.title.slice(0, advantage.title.length-1) }}
+                <span>{{advantage.title.slice(advantage.title.length-1)}}</span>
+            </p>
+            <p class="text text-opacity">{{ advantage.text }}</p>
+        </div>
+        }
+    </div>
+</section>

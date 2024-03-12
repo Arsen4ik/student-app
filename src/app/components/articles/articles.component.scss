@@ -1,0 +1,124 @@
+section {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .about {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        margin-bottom: 16px;
+
+        span {
+            width: 64px;
+            height: 4px;
+            display: block;
+            background-color: var(--blood);
+        }
+
+        p {
+            font-family: Inter;
+            font-size: 24px;
+            font-weight: 400;
+        }
+    }
+
+    h1 {
+        font-family: Plus Jakarta Sans;
+        font-size: 36px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    .articles {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        margin-bottom: 80px;
+
+        .article {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            padding: 24px;
+            border: 1px solid #EBEFF6;
+            border-radius: 32px;
+
+            .article-image {
+                width: 314.67px;
+                height: 274px;
+            }
+
+            .status {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                align-items: center;
+                gap: 4px;
+
+                p {
+                    font-family: Inter;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+
+                .calendar,
+                .user {
+                    width: 11.69px;
+                    height: 11.69px;
+                }
+
+                .calendar {
+                    margin-left: auto;
+                }
+            }
+
+            .title {
+                font-family: Plus Jakarta Sans;
+                font-size: 24px;
+                font-weight: 600;
+            }
+
+            .more {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                justify-content: center;
+
+                p {
+                    font-family: Inter;
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    button {
+        width: fit-content;
+        padding: 24px 80px;
+        background-color: var(--blood);
+        color: var(--white);
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        align-items: center;
+        border-radius: 16px;
+        border: none;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 700;
+        transition: all ease-in-out .25s;
+
+        &:hover {
+            cursor: pointer;
+            filter: grayscale(25%);
+        }
+    }
+}
